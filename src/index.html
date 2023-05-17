@@ -6,16 +6,84 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href=""
+      href="./assets/images/logo-white.svg"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Nuevo títuloo</title>
+    <title>Nuria Rivas</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__top">
+        <img
+          src="./assets/images/logo-white.svg"
+          alt="logo"
+        />
+        <div
+          id="toggle-menu"
+          class="toggle-menu"
+        >
+          <img
+            id="menu-icon"
+            src="./assets/images/icon-hamburger.svg"
+            alt="menu"
+          />
+        </div>
+      </div>
+      <nav class="nav">
+        <ul
+          class="menu"
+          id="menu"
+        >
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#"
+            >
+              SOBRE MI
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#"
+            >
+              PROYECTOS
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#"
+            >
+              CONTACTO
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="banner">
+        <h2 class="title">Hola, soy Nuria</h2>
+        <p class="job">JUNIOR FRONT-END DEVELOPER - PHOTOGRAPHER</p>
+      </section>
+    </main>
     <script
       type="module"
       src="./js/index.js"
