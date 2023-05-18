@@ -1,18 +1,41 @@
 @use '../mixins/pseudo.scss' as *;
-.title {
-  animation: teclear 2s steps(17);
-  font-family: 'Roboto Mono', monospace;
-  @keyframes teclear {
-    from {
-      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
+.outer-headings {
+  display: flex;
+  flex-direction:column;
+  
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.inner-headings {
+  border: 0px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.inner-headings span {
+  position: relative;
+  color:var(--color-terciary);
+  animation: animation 8s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
   }
-  @keyframes efecto {
-    50% {
-      border-color: transparent;
-    }
+  20% {
+    top: 0;
   }
+  50% {
+    top: -50px;
+  }
+  80% {
+    top: -100px;
+  } 
 }
