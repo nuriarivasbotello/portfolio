@@ -1,12 +1,21 @@
 @use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
 .outer-headings {
   display: flex;
-  flex-direction:column;
-  
+  flex-direction: column;
+  @include responsive(desktop) {
+    padding-left: 40px;
+  }
 }
 
 h1 {
+  color: white;
   font-size: 20px;
+  position: relative;
+  @include responsive(desktop) {
+    color: var(--color-primary);
+    font-size: 60px;
+  }
 }
 
 .inner-headings {
@@ -16,11 +25,14 @@ h1 {
   font-size: 20px;
   text-transform: uppercase;
   overflow: hidden;
+  @include responsive(desktop) {
+    font-size: 40px;
+  }
 }
 
 .inner-headings span {
   position: relative;
-  color:var(--color-terciary);
+  color: var(--color-terciary);
   animation: animation 8s ease infinite;
 }
 
@@ -37,5 +49,20 @@ h1 {
   }
   80% {
     top: -100px;
-  } 
+  }
+}
+.title {
+  font-family: var(--font-family-karla);
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  @include responsive(desktop) {
+    font-size: 30px;
+  }
+}
+.title--little {
+  font-size: 25px;
+  @include responsive(desktop) {
+    font-size: 30px;
+  }
 }

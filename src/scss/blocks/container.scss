@@ -1,0 +1,12 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.container-studies {
+  position: relative;
+  @include responsive(desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+  }
+}

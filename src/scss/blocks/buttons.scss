@@ -1,1 +1,138 @@
-
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.buttons-main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 350px;
+}
+.button {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--color-secundary);
+  border-radius: 0.6em;
+  color: var(--color-secundary);
+  cursor: pointer;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-items: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--color-secundary);
+  outline: 0;
+}
+.button-info {
+  border-color: var(--color-secundary);
+  color: white;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    45deg,
+    var(--color-secundary) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  @include responsive(desktop) {
+    position: absolute;
+    left: 20px;
+    top: -90px;
+    align-items: center;
+    color: var(--color-primary);
+  }
+  @include hover {
+    background-position: 0;
+  }
+}
+.buttons-container-studies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  @include responsive(desktop) {
+    width: 600px;
+    justify-content: space-between;
+  }
+}
+.button-github {
+  border-color: var(--color-terciary);
+  color: var(--color-primary);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    45deg,
+    var(--color-terciary) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  @include responsive(desktop) {
+    position: absolute;
+    left: 20px;
+    top: -90px;
+    align-items: center;
+    color: varvar(--color-terciary);
+  }
+  @include hover {
+    background-position: 0;
+  }
+}
+.button-instagram {
+  border-color: var(--color-terciary);
+  color: var(--color-primary);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    45deg,
+    var(--color-terciary) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  @include responsive(desktop) {
+    position: absolute;
+    left: 20px;
+    top: -90px;
+    align-items: center;
+    color: var(--color-terciary);
+  }
+  @include hover {
+    background-position: 0;
+  }
+}

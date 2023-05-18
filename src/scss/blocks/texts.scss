@@ -1,2 +1,16 @@
-.job {
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/pseudo.scss' as *;
+.paragraph {
+  font-family: var(--font-family-barlow);
+  font-weight: var(--font-weight-bold);
+  @include responsive(desktop) {
+    font-size: 25px;
+  }
+}
+.studies {
+  font-family: var(--font-family-barlow);
+  line-height: 25px;
+  @include responsive(desktop) {
+    font-size: 25px;
+  }
 }

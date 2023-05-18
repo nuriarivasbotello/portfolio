@@ -1,0 +1,13 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  background: var(--color-about-me);
+  @include responsive(desktop) {
+    position: relative;
+  }
+}
