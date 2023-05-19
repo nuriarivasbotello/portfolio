@@ -1,0 +1,30 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.studies{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:40px;
+  padding-right:60px;
+  font-family: var(--font-family-paragraph);
+     @include responsive(desktop) {
+        width: 1000px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    &__info{
+        @include responsive(desktop) {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+         position: relative;
+         top:-10px;
+        right:100px;
+    }
+}
+}

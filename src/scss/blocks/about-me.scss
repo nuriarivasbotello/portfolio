@@ -3,11 +3,31 @@
 @use '../mixins/responsive.scss' as *;
 .about-me {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  padding-left: 20px;
-  background: var(--color-about-me);
+  padding-left: 40px;
   @include responsive(desktop) {
-    position: relative;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding-left:90px;
+    &::before {
+      @include pseudo(350px, 350px) {
+        margin-top: -160px;
+        position: absolute;
+        top:250px;
+        left:940px;
+        background-repeat: no-repeat;
+        background-position:-80px;
+        background-image: url(../assets/images/prueba.png);
+      }
   }
+  &__info{
+    @include responsive(desktop) {
+    }
+  }
+}
 }

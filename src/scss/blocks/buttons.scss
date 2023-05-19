@@ -4,7 +4,7 @@
 .buttons-main {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   top: 350px;
 }
 .button {
@@ -43,8 +43,10 @@
   outline: 0;
 }
 .button-info {
-  border-color: var(--color-secundary);
-  color: white;
+  position: absolute;
+  top:-180px;
+  border-color:var(--color-secundary);
+  color: black;
   background-image: -webkit-linear-gradient(
     45deg,
     #f1c40f 50%,
@@ -61,22 +63,25 @@
   transition: background 300ms ease-in-out;
   @include responsive(desktop) {
     position: absolute;
-    left: 20px;
-    top: -90px;
+   top:-40px;
     align-items: center;
-    color: var(--color-primary);
+    color: black;
   }
   @include hover {
     background-position: 0;
+    color:var(--color-primary);
+    border: 1px white solid;
   }
 }
 .buttons-container-studies {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  padding-bottom:20px;
   @include responsive(desktop) {
-    width: 600px;
+    width: 500px;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -98,9 +103,6 @@
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
   @include responsive(desktop) {
-    position: absolute;
-    left: 20px;
-    top: -90px;
     align-items: center;
     color: varvar(--color-terciary);
   }
@@ -126,11 +128,8 @@
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
   @include responsive(desktop) {
-    position: absolute;
-    left: 20px;
-    top: -90px;
     align-items: center;
-    color: var(--color-terciary);
+    color: var(--color-primary);
   }
   @include hover {
     background-position: 0;

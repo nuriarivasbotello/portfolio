@@ -1,16 +1,21 @@
 @use '../mixins/responsive.scss' as *;
 @use '../mixins/pseudo.scss' as *;
 .paragraph {
-  font-family: var(--font-family-barlow);
-  font-weight: var(--font-weight-bold);
+  font-weight:normal;
+  font-size:17px;
+  font-family: var(--font-family-paragraph);
+  padding-right: 40px;
   @include responsive(desktop) {
-    font-size: 25px;
+    font-size: 20px;
+    width: 600px;
+    position: relative;
+    right:100px;
   }
 }
-.studies {
+.studies-name {
   font-family: var(--font-family-barlow);
   line-height: 25px;
   @include responsive(desktop) {
-    font-size: 25px;
+    font-size: 20px;
   }
 }

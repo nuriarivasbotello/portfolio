@@ -1,12 +1,67 @@
 @use '../mixins/pseudo.scss' as *;
 @use '../mixins/hover.scss' as *;
 @use '../mixins/responsive.scss' as *;
-.container-studies {
-  position: relative;
-  @include responsive(desktop) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: red;
-  }
+.container{
+    width: 300px;
+        margin: 0 auto;
+        padding:0 50px;
+        border: 2px black solid;
+        box-shadow: 5px 5px 1px black;
+    @include responsive(desktop) {
+        margin:100px 200px;
+        padding:0 50px;
+        border: 2px black solid;
+        box-shadow: 5px 5px 1px black;
+    }
+    &__header{
+         width: 300px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            position: relative;
+            top:-2px;
+            right:42px;
+            gap:10px;
+            padding-left:25px;
+            background-color:var(--color-secundary);
+            border: 2px black solid;
+        @include responsive(desktop) {
+            width: 1000px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            gap:10px;
+            position: relative;
+            top:-60px;
+            left:10px;
+            padding-left:25px;
+            background-color:var(--color-secundary);
+            border: 2px black solid;
+
+        }
+    }
+}
+.container__header--move{
+    top:-2px;
+    left:-22px;
+    @include responsive(desktop) {
+        display: flex;
+            flex-direction: row;
+            gap:10px;
+            position: relative;
+            top:-90px;
+            left:15px;
+    }
+}
+.container-icon{
+    @include responsive(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 }

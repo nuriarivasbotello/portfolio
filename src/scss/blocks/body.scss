@@ -1,7 +1,12 @@
+@use '../mixins/responsive.scss' as *;
 html {
 }
 body {
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 110px;
+  @include responsive(desktop) {
+    padding-top:0;
+   
+}
 }

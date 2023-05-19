@@ -1,20 +1,32 @@
 @use '../mixins/pseudo.scss' as *;
 @use '../mixins/responsive.scss' as *;
 .outer-headings {
+  width: 400px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:40px;
+  padding-left:30px;
   @include responsive(desktop) {
-    padding-left: 40px;
+    width: 900px;
+    padding-right:150px;
   }
 }
 
 h1 {
-  color: white;
-  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  color:black;
+  font-size: 30px;
   position: relative;
+  font-family:var(--font-family-title);
   @include responsive(desktop) {
-    color: var(--color-primary);
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -22,17 +34,19 @@ h1 {
   border: 0px solid #ddd;
   height: 50px;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
   overflow: hidden;
   @include responsive(desktop) {
-    font-size: 40px;
+    font-size: 30px;
+    top:5px;
+    position: relative;
   }
 }
 
 .inner-headings span {
   position: relative;
-  color: var(--color-terciary);
+  color:var(--color-secundary);
   animation: animation 8s ease infinite;
 }
 
@@ -52,17 +66,31 @@ h1 {
   }
 }
 .title {
-  font-family: var(--font-family-karla);
-  font-weight: bold;
-  font-size: 30px;
+  font-family: var(--font-family-title);
+  font-weight:bold;
+  font-size: 20px;
   letter-spacing: 2px;
   @include responsive(desktop) {
     font-size: 30px;
+  
   }
 }
-.title--little {
-  font-size: 25px;
+.title--move{
   @include responsive(desktop) {
     font-size: 30px;
+    position: relative;
+    right:100px;
   }
+}
+.tittle--move-container{
+  @include responsive(desktop) {
+    font-size: 20px;
+    position: relative;
+    right:-50px;
+  }
+}
+.icon-title{
+  font-size:20px;
+  font-family: var(--font-family-karla);
+  font-weight:normal;
 }

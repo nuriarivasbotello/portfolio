@@ -21,20 +21,10 @@
       href="https://fonts.gstatic.com"
       crossorigin
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="style.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@100;400&family=Francois+One&family=Josefin+Sans:wght@100;300;400&family=Merriweather:wght@300;700&family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b005b5094c.js" crossorigin="anonymous"></script>
     <!-- CAMBIA EL TITLE!!! -->
     <title>Nuria Rivas</title>
   </head>
@@ -64,7 +54,7 @@
           <li class="menu__item">
             <a
               class="menu__link"
-              href="#"
+              href="#s"
             >
               SOBRE MI
             </a>
@@ -109,37 +99,84 @@
             >Conóceme</a
           >
         </section>
+        <section class="about-me">
+          <article class="about-me__info">
+           <h2 class="title title--move">Sobre Mi</h2>
+           <p class="paragraph">
+            Me encanta aprender y desarrollar aún más mis capacidades y descubrir
+            nuevas. Siempre atenta a cualquier detalle y pensando en qué poder
+            mejorar del proyecto.
+           </p>
+          </article>
+        </section>
       </section>
-      <section class="about-me">
-        <h2 class="title title--categories">Sobre Mi</h2>
-        <p class="paragraph">
-          Me encanta aprender y desarrolar aún más mis capacidades y descubrir
-          nuevas. Siempre atenta a cualquier detalle y pensando en qué poder
-          mejorar del proyecto.
-        </p>
-        <article class="container-studies">
-          <h3 class="title title--little">Estudios</h3>
-          <p class="studies">Máster Diseño Web Front - End | Trazos 2023</p>
-          <p class="studies">
+     
+      <section class="container studies">
+        <div class="container__header">
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <h3 class="title tittle--move-container">Estudios</h3>
+        </div>
+        <article class="studies__info">
+          <p class="studies-name">Máster Diseño Web Front - End | Trazos 2023</p>
+          <p class="studies-name">
             Técnico superior Iluminación, captación y tratamiento de la imagen |
             Luis Buñuel 2018 - 2021
           </p>
+        </article>
           <div class="buttons-container-studies">
             <a
-              class="button button-githu"
+              class="button button-github"
               href="#"
               >GitHub</a
             >
             <a
-              class="button button-instagra"
+              class="button button-instagram"
               href="#"
               >Instagram</a
             >
           </div>
-        </article>
-        <article class="container-skills">
-          <h3 class="title title-little">Habilidades</h3>
-          <div class="languages"></div>
+      </section>
+
+      <section class="container skills">
+        <div class="container__header container__header--move">
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <h3 class="title tittle--move-container">Habilidades</h3>
+        </div>
+        <article class="skills__info">
+          <article class="container-icon html">
+            <img class="icon" src="./assets/images/icon-html.png" alt="HTML"/>
+            <h2 class="icon-title">HTML</h2>
+          </article>
+          <article class="container-icon css">
+            <img class="icon" src="./assets/images/icon-css.png" alt="CSS"/>
+            <h2 class="icon-title">CSS3</h2>
+          </article>
+          <article class="container-icon js">
+            <img class="icon" src="./assets/images/icon-js.svg" alt="JAVASCRIPT"/>
+            <h2 class="icon-title">JavaScript</h2>
+          </article>
+          <article class="container-icon git">
+            <img class="icon" src="./assets/images/icon-git.svg" alt="GIT"/>
+            <h2 class="icon-title">GIT</h2>
+          </article>
+          <article class="container-icon bem">
+            <img class="icon" src="./assets/images/icon-bem.png" alt="BEM"/>
+            <h2 class="icon-title">BEM</h2>
+          </article>
+          <article class="container-icon sass">
+            <img class="icon" src="./assets/images/icon-sass.png" alt="SASS"/>
+            <h2 class="icon-title">SASS</h2>
+          </article>
+          <article class="container-icon ph">
+            <img class="icon" src="./assets/images/icon-ph.png" alt="Photoshop"/>
+            <h2 class="icon-title">Photoshop</h2>
+          </article>
+          <article class="container-icon lr">
+            <img class="icon" src="./assets/images/icon-lr.png" alt="Lightroom"/>
+            <h2 class="icon-title">Lightroom</h2>
+          </article>
         </article>
       </section>
     </main>

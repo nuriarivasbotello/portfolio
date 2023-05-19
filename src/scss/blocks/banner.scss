@@ -3,29 +3,25 @@
 .banner {
   height: 500px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-position: 0%;
-  background-repeat: no-repeat;
-  margin-top: -6px;
-  background-image: url(../assets/images/prueba.png);
+ 
 
   @include responsive(desktop) {
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    background-image: none;
-    &::before {
-      @include pseudo(540px, 500px) {
-        top: 40px;
-        left: 850px;
-        background-repeat: no-repeat;
-        align-items: center;
-        background-image: url(../assets/images/prueba.png);
-      }
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right:350px;
+  /*&::before {
+    @include pseudo(1440px, 2px) {
+      position: relative;
+      top:500px;
+    margin: 0 auto;
+      background-color: black;
     }
-  }
+  }*/
+}
 }

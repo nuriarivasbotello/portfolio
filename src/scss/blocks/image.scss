@@ -1,0 +1,13 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.icon{
+width: 60px;
+align-items: center;
+}
+.sass{
+    @include responsive(desktop) {
+        position: relative;
+        top:15px;
+    }
+}

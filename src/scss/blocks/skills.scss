@@ -1,0 +1,36 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.skills{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  margin-top: 50px;
+     @include responsive(desktop) {
+        width: 1000px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    &__info{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap:30px;
+      padding-top:40px;
+      padding-left:30px;
+      align-items: center;
+     @include responsive(desktop) {
+       width: 500px;
+       display: grid;
+       grid-template-columns: 25% 25% 25% 25%;
+       position: relative;
+       bottom:30px;
+       right:80px;
+       gap:50px;
+       font-size: 20px;
+    }
+}
+}
